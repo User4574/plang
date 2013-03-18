@@ -1,0 +1,8 @@
+PLANG - The Packet Internet Groper Local Area Network Groper
+
+Nowhere near finished.
+
+Client gathers stats and pushes them back to the home server
+Parser turns stats into graph
+
+You'll need graphviz to do the rest
