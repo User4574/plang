@@ -1,0 +1,24 @@
+Configs db example
+
+configs.servera is a collection containing records like:
+{
+	"timestamp": 1363817460,
+	"configttl": 3600,
+	"pinginterval": 60,
+	"neighbours": [
+		"serverb",
+		"serverc",
+		"home"
+	]
+}
+
+
+Results db example
+
+results.servera is a collection containing records like:
+{
+	"timestamp": 1363817460,
+	"serverb": 0.057,
+	"serverc": 0.054,
+	"home": 0.055
+}

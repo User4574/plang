@@ -25,7 +25,7 @@ threads["pingthread"] = Thread.new do loop do
 		slock = true
 		results = {"timestamp" => Time.now.to_i}
 		settings["neighbours"].each do |neighbour|
-			pingtime = %x[ping -c1 #{neighbour}][/time=(.*?) ms/, 1]
+			pingtime = %x[ping -c1 #{neighbour}][/time=(.*?) ms/, 1].to_f
 			results.merge!({neighbour => pingtime})
 		end
 		rcoll.insert(results)
