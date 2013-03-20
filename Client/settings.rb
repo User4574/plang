@@ -1,0 +1,2 @@
+THIS="servera"
+HOME="home"

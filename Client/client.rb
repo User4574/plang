@@ -1,15 +1,16 @@
 require 'rubygems'
 require 'mongo'
 
+require './settings.rb'
+
 include Mongo
 
-THIS = "servera"
 settings = nil
 slock = false
 
 threads = {}
 
-client	= MongoClient.new('home', 27017)
+client	= MongoClient.new(HOME, 27017)
 cdb		= client['configs']
 rdb		= client['results']
 ccoll	= cdb[THIS]
